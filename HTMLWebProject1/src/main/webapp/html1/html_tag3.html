@@ -1,0 +1,33 @@
+<!-- 
+	a (앵커 태그) => 다른 화면으로 이동
+	<a href="이동할 파일명/사이트 지정"></a> ==> 반드시 닫는다 ==> link가 없는 경우 #
+	=> 게시물의 제목, 이미지, 메뉴...
+ -->
+ <!-- 
+ 	태그
+ 	---
+ 	  블록 속성 : 한줄 전체를 이용하는 태그 (다음줄) System.out.println : h,div,table
+ 	  인라인 속성 : 부분만 이용 (옆으로 출력) System.out.print : a,image,input...
+  -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+a:hover{
+	text-decoration: underline;
+	color:green
+}
+a{
+	text-decoration: none;
+	color:black;
+}
+</style>
+</head>
+<body>
+  <a href="http://daum.net" target="_blank">다음</a><br><!-- 인라인 태그 target을 생략 => _self -->
+  <a href="http://naver.com">네이버</a><br>
+  <a href="http://google.co.kr">구글</a><br>
+</body>
+</html>

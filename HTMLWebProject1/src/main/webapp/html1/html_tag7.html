@@ -1,0 +1,73 @@
+<!-- 
+  rowspan => 세로 묶기
+  colspan => 가로 묶기
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+  <h1>Colspan : 가로로 묶을때 사용</h1>
+  <!-- 속성값은 "" 기본
+       단 생략할 수 있다
+       
+       반드시 ""를 사용하는 부분
+       ------------------- 공백이 있는 경우
+       <input type=text value=Hello Java>
+       <input type=text value="Hello Java">
+   -->
+  <table border=1 width="700">
+    <tr height="30">
+      <td colspan=2></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr height="30">
+      <td></td>
+      <td colspan="2"></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr height="30">
+      <td colspan="3"></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+  <p>
+  <h1>Rowspan : 세로로 묶는다</h1>
+  <table border=1 width=550>
+    <tr height="30">
+      <td width=30% rowspan="6"></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr height="30">
+      <td width=10%></td>
+      <td width=60%></td>
+    </tr>
+    <tr height="30">
+      <td width=10%></td>
+      <td width=60%></td>
+    </tr>
+    <tr height="30">
+      <td width=10%></td>
+      <td width=60%></td>
+    </tr>
+    <tr height="30">
+      <td width=10%></td>
+      <td width=60%></td>
+    </tr>
+    <tr height="30">
+      <td width=10%></td>
+      <td width=60%></td>
+    </tr>
+  </table>
+  <p>
+  <h1>속성값에 반드시 ""가 출력하는 부분</h1>
+  <input type=text value=Hello Java><br>
+  <input type=text value="Hello Java">
+</body>
+</html>
