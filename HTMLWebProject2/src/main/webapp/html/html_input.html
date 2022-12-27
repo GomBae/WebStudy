@@ -1,0 +1,90 @@
+<!-- 
+	글쓰기 (게시판)
+	게시판 목록
+	회원가입
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="table.css">
+</head>
+<!-- 
+	table : 목록 출력
+	        속성
+	        1) width, height
+	        2) style, id, class, name => 구분자, 디자인
+	        3) border : 두께
+	        4) bordercolor : 색상
+	        5) cellpadding
+	        6) cellspacing
+	tr : 한줄
+	     속성
+	     1) width,height
+	     2) style, id, class, name => 구분자
+	     3) bgcolor : 색상
+	th(center)/td(left) : 데이터 출력 공간
+	     속성
+	     1) width,height
+	     2) style, id, class, name => 구분자
+	     3) bgcolor
+	     4) align valign --(top,middle,bottom)
+	        -----
+	        left, right,center 
+	        ----- 데이터의 길이가 동일 => center
+	        ----- 데이터의 길이가 동일하지 않음 => left
+	        ----- 숫자 => right
+ -->
+<body>
+	<center><!-- 사용금지, margin:0px auto -->
+	  <h1>글쓰기</h1>
+	  <form><!-- 입력된 모든 데이터를 한번에 전송 -->
+	  <table width=500 id="table_content">
+	    <tr>
+	      <th width=20% align="right">이름</th>
+	      <td width=80%>
+	        <input type=text size=15 required><!-- 유효성 검사 -->
+	      </td>
+	    </tr>
+	    <tr>
+	      <th width=20% align="right">홈페이지</th>
+	      <td width=80%>
+	        <input type=text size=35 value="http://"><!-- 유효성 검사 -->
+	      </td>
+	    </tr>
+	    <tr>
+	      <th width=20% align="right">이메일</th>
+	      <td width=80%>
+	        <input type=text size=35 required><!-- 유효성 검사 -->
+	      </td>
+	    </tr>
+	    <tr>
+	      <th width=20% align="right">제목</th>
+	      <td width=80%>
+	        <input type=text size=35 required><!-- 유효성 검사 -->
+	      </td>
+	    </tr>
+	    <tr>
+	      <th width=20% align="right">내용</th>
+	      <td width=80%>
+	        <textarea rows="8" cols="35"></textarea><!-- 유효성 검사 -->
+	      </td>
+	    </tr>
+		  <tr>
+	      <th width=20% align="right">비밀번호</th>
+	      <td width=80%>
+	      <input type=password size=35 required><!-- 유효성 검사 -->
+	      </td>
+	    </tr>
+	    <tr>
+	      <td colspan="2" align=center>
+	        <input type=submit value="글쓰기">
+	        <input type=button value="취소">
+	      </td>
+	    </tr>
+	  </table>
+	  </form>
+	</center>
+</body>
+</html>

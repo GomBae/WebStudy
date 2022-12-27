@@ -1,0 +1,79 @@
+<!-- 
+	= HTML (태그+속성)
+	  <태그명 속성명="값" 속성명="값"...></태그명>
+	  <태그명 속성명="값" /> => Empty태그
+	        ---------- 속성의 값을 이용
+	  => 초기값을 지정하면 변경할 수 없다 (정적 페이지)
+	  => 동적 => 자바스크립트
+	  => HTML/CSS/JavaScript
+	              ---------- 데이터가 없는 상태 (데이터 전달 : 자바)
+	  => 브라우저에서는 실행할 수 있는 언어 => ML만 가능 (HTML,XML)
+	  
+	  <head>
+	  	<meta> : 문자인코딩
+	  	  <meta charset="UTF-8"> : 한글 처리
+	  	<title>
+	  	<link> : CSS 파일 읽기
+	  			 외부 CSS => 문서 => <link> ==> 프로젝트 파일 전체에서 공통으로 사용
+	  			 내부 CSS => HTML <style> ==> 한개의 파일안에서만 사용
+	  			 인라인 CSS => <태그 style=""> ==> 한개의 태그만 제어
+	  	<style> : CSS적용 
+	  	<script> : 이벤트 처리, 데이터 관리
+	  	
+	  <body>
+	    <input>
+	    -------
+	      type
+	        = text : 한줄 문자열
+	        = password : 암호화
+	        = radio : 라디오 버튼
+	        = checkbox
+	        = date
+	        = submit : 전송버튼 <button>, type=image
+	        = button : 자바스크립트에서 처리
+	        = reset : 초기화 버튼
+	        **= number
+	        
+	        header, footer, section, article
+	  	
+	  	
+	  
+	  <body>
+ -->
+<!DOCTYPE html>
+<html>
+<head><!-- 설정파일이 없는 경우 생략 가능 -->
+<meta charset="UTF-8">
+<title>맛집 & 여행</title>
+</head>
+<body>
+<!-- 
+	<img> 이미지 출력
+	---------------- png, gif, jpg만 출력 가능
+	1) 속성
+	   = src => 파일명 지정 (원격,폴더)
+	            --------  파일 지정
+	            --------  ./image/a.jpg
+	            --------  image/a.jpg
+	            ------------------------
+	            --------  ../image/a.jpg
+	            --------  ../../image/../a.jpg
+	   = width
+	   = height
+	   -------------
+	   = name : 자바에서 데이터값을 받는 경우에 사용
+	   --------------
+	   = id : 중복이 없다
+	   = class : 중복이 가능
+	   -------------- CSS, JavaScript => 구분자
+	   = style
+	   --------------
+	   <img src="#" usemap="#food">
+	   <map name="food">
+	     <area shape="rect" coords="202,92,344,195" href="html_tag2.html>
+	     
+	     일반 사이트 동영상 : embed
+	     VueJS, ReactJS => <iframe>
+ -->
+</body>
+</html>

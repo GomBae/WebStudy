@@ -1,0 +1,32 @@
+<!-- 
+	fieldset, legend, label
+	--------- 테이블 : table
+	
+	<label for="a">ID</label> --- row(<tr>)
+	<input type=text size=10 id="a"> --- column(<td>)
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+  <fieldset style="width:320px">
+    <legend>로그인</legend>
+    <ul style="list-style-type: none"><!-- 목록(순서없이), 테이블 대신, 메뉴 -->
+      <li>
+        <label for="id" style="width:50px">ID</label>
+        <input type=text id=id size=15 style="width:150px">
+      </li>
+      <li>
+        <label for="pw" style="width:50px">PW</label>
+        <input type=password id=pw size=15 style="width:150px">
+      </li>
+      <li>
+        <input type=submit value="로그인">
+      </li>
+    </ul>
+  </fieldset>
+</body>
+</html>

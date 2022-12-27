@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+tr{
+height: 35px;
+}
+input[type=text],input[type=password]{
+  height: 20px;
+}
+#aaa{
+  background-image: url('back.jpg');
+  background-size: cover;
+}
+td{
+ color: white;
+}
+</style>
+</head>
+<!-- 
+  회원가입 : 아이디 중복 체크, 우편번호 검색
+  게시판 : CURD
+  -------------------
+  예약 : Ajax
+  검색 : Ajax
+  ----------- 화면 변경(x)
+ -->
+<body>
+  <center>
+    <h1>회원가입</h1>
+    <table border=1 bordercolor=black cellpadding=0 cellspacing=0 width=700>
+      <tr>
+        <td>
+          <table border=0 width=700 id="aaa">
+            <tr>
+              <td width=15% align=right>ID</td>
+              <td width=85%>
+                <input type=text size=15 readonly>
+                <input type=submit value="중복체크">
+              </td>
+            </tr>
+            <tr>
+              <td width=15% align=right>Password</td>
+              <td width=85%>
+                <input type=password size=15>
+                <input type=password placeholder="재입력">
+              </td>
+            </tr>
+            <tr>
+              <td width=15% align=right>이름</td>
+              <td width=85%>
+                <input type=text size=15>
+              </td>
+            </tr>
+            <tr>
+              <td width=15% align=right>성별</td>
+              <td width=85%>
+                <input type=radio name=sex checked>남자
+                <input type=radio name=sex>여자
+              </td>
+            </tr>
+            <tr>
+              <td width=15% align=right>생년월일</td>
+              <td width=85%>
+                <input type=date size=25>
+              </td>
+            </tr>
+            <tr>
+              <td width=15% align=right>이메일</td>
+              <td width=85%>
+                <input type=text size=55>
+              </td>
+            </tr>
+            <tr>
+              <td width=15% align=right>우편번호</td>
+              <td width=85%>
+                <input type=text size=7 readonly>-<input type=text size=7 readonly>
+                <input type=button value="우편번호 검색">
+              </td>
+            </tr>
+            <tr>
+              <td width=15% align=right>주소</td>
+              <td width=85%>
+                <input type=text size=55>
+              </td>
+            </tr>
+            <tr>
+              <td width=15% align=right>상세주소</td>
+              <td width=85%>
+                <input type=text size=55>
+              </td>
+            </tr>
+            <tr>
+              <td width=15% align=right>전화번호</td>
+              <td width=85%>
+                <select>
+                  <option>02</option>
+                  <option>031</option>
+                  <option>032</option>
+                  <option>041</option>
+                  <option>042</option>
+                  <option>061</option>
+                  <option>062</option>
+                </select>
+                <input type=text size=7 readonly>-<input type=text size=7 readonly>
+              </td>
+            </tr>
+            <tr>
+              <td width=15% align=right>취미</td>
+              <td width=85%>
+                <input type=checkbox>낚시
+                <input type=checkbox>운동
+                <input type=checkbox>등산
+                <input type=checkbox>게임
+                <input type=checkbox>여행
+                <input type=checkbox>자전거
+              </td>
+            </tr>
+            <tr>
+              <td width=15% align=right>소개</td>
+              <td width=85%>
+                <textarea rows="8" cols="55"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td colspan=2 align=center>
+                <input type=submit value="회원가입">
+                <input type=button value="취소">
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </center>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!-- 
+	입력양식 태그 (회원가입, 글쓰기, 댓글, 장바구니(수량)
+	=> input, textarea, select
+	=> form : 입력된 데이터나 선택된 데이터를 한번에 모아서 전송
+	          => 전송 방식
+	             GET
+	             POST
+	=> <label> , <fieldset>
+	1) 입력양식
+	   <input type="">
+	          -------
+	           = text : 한줄 문자열 => ID,이름,주소,이메일,제목..
+	           <input type="text" id="" class="" name="" style="" size="" value="">
+	                              ---------------------- --------   |       |
+	                                     구분자                     크기     값을 설정 => 자동 로그인, 수정
+	           ** 값을 출력 : <태그명>출력할 데이터</태그명>
+	                        <태그명 속성="">
+	           ** 블록/인라인
+	              <input> : 인라인 (옆으로 붙음)
+	           
+	           ** 블록 속성 : <h1>~<h6>, <br>, <p>, <div>, <ul>, <ol>, <table>, <hr>
+	           ** 인라인 속성 : <img>, <a>, <input>, <select>, <textarea>, <span>
+	           = password : ***로 출력
+	             <input type="password" id="" class="" name="" style="" size="" value="">
+	           = radio : 반드시 그룹을 만들어서 사용 => name속성이 동일해야된다
+	           = checkbox : 여러개 동시에 선택 (관심분야, 취미)
+	           = file : 업로드시 파일 선택시에
+	           = button, submit, reset, image => 버튼의 종류
+	           = date : 달력 출력
+	           = number : spin button
+	           ----------------------------------------------------------------------
+	           select
+	             |
+	           option
+	           
+	           textarea => 속성 (rows(height),cols(width))
+	           
+	           fieldset
+	             |
+	           legend : 분류
+	           label
+	           ---------------------- 자바/스프링 => name속성 반드시 줘야함 (없으면 입력값을 받을 수 없다)
+	           									  반드시 VO에 지정한 변수명을 name으로 사용한다
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+  <!-- 로그인 -->
+  ID:<input type=text size=15><br>
+  PW:<input type=password size=15><br>
+  <input type=submit value="로그인">
+  <input type=button value="취소">
+  <p>
+  <table width=350>
+    <tr>
+      <td align=right width=25%>ID</td>
+      <td align=left width=75%><input type=text size=15></td>
+    </tr>
+    <tr>
+      <td align=right width=25%>Password</td>
+      <td align=left width=75%><input type=password size=15></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">
+        <input type=submit value="로그인">
+        <input type=button value="취소">
+      </td>
+    </tr>
+  </table>
+  <hr>
+  <!-- 라디오 버튼은 1개 선택 => 그룹속성을 준다 => name이 동일하면 같은 그룹 -->
+  성별 : <input type="radio" checked name="sex">남자
+  		<input type="radio" name="sex">여자
+  <hr>
+  취미 : <input type="checkbox">운동
+        <input type="checkbox">등산
+        <input type="checkbox">게임
+        <input type="checkbox">낚시
+        <input type="checkbox">여행
+  <hr>
+  파일 선택 : <input type=file size=20>
+  <hr>
+  <!-- 크롬/파이어폭스에서만 사용 가능 -->
+  생년월일 : <input type="date" size=20>
+  <hr>
+  나이 : <input type="number" min="10" max="70">
+  <hr>
+  범위 : <input type="range" min="100" max=500>
+  <hr>
+  버튼의 종류 : 
+  			 <input type=submit value="전송">
+  			 <input type=reset value="초기화">
+  			 <input type=button value="취소">
+  			 <input type=image src="#">
+  			 <button>글쓰기</button>
+  <hr>
+  <select>
+    <option>02</option>
+    <option>032</option>
+    <option>031</option>
+    <option>061</option>
+    <option>062</option>
+  </select>
+  <hr>
+  내용 : <textarea rows=8 cols=30></textarea>
+</body>
+</html>

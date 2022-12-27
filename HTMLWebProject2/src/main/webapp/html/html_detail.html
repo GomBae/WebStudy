@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="table.css">
+<!-- 
+	<ul> : 메뉴 (웹 템플릿 => 메뉴 : ul)
+	  |
+	 <li>
+	 
+	 <ol> : 파일 다운로드 목록이 많은 경우
+	   |
+	  <li>
+	 
+	 <table> : 가장 많이 등장하는 리스트 형식
+	    |
+	  <tr>
+	   |
+	 -----
+	 |   |
+	<td>  <th>
+	
+	   <dl> : 
+	     |
+	    <dt> 데이터
+	    <dd> 데이터에 대한 설명
+	    
+	<select>
+	   |
+	<option>
+ -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+  <script type="text/javascript">
+  let i=0;
+    $(function(){
+    	$('#delBtn').click(function(){
+    		if(i==0){
+    			$('#del').show();
+    			i=1;
+    		}
+    		else{
+    			$('#del').hide();
+    			i=0;
+    		}
+    	})
+    })
+  </script>
+</head>
+<body>
+	<center>
+	  <h1>내용보기</h1>
+	  <table id="table_content" width="650">
+	    <tr>
+	      <th width=20%>번호</th>
+	      <td width=30% align=center>1</td>
+	      <th width=20%>작성일</th>
+	      <td width=30% align=center>2022-12-27</td>
+	    </tr>
+	    <tr>
+	      <th width=20%>이름</th>
+	      <td width=30% align=center>홍길동</td>
+	      <th width=20%>조회수</th>
+	      <td width=30% align=center>10</td>
+	    </tr>
+	    <tr>
+	      <th width=20%>제목</th>
+	      <td colspan="3">토트넘 역사 바뀔 뻔...“이적 99% 완료됐었다” 고백</td>
+	    </tr>
+	    <tr>
+	      <td colspan="4" align=left valign="top" height="200">
+토트넘은 가투소 감독이 피오렌티나 수뇌부와의 불화로 뛰쳐나오자 곧바로 협상에 들어갔다. 하지만 팬들의 반발이 엄청났다. 토트넘 팬들은 가투소 감독 선임 가능성이 전해지자 SNS에 'NOTOGattuso'라는 해쉬태그와 함께 강한 반발을 드러냈다. 가장 큰 이유로는 가투소 감독이 과거에 인종차별, 성차별은 물론 동성애 혐오 뉘앙스의 발언을 했다는 것 때문이었다.
+	      </td>
+	    </tr>
+	    <tr>
+	      <td colspan="4" align="right">
+	        <input type=button value="답변">
+	        <input type=button value="수정">
+	        <input type=button value="삭제" id="delBtn">
+	        <input type=button value="목록">
+	      </td>
+	    </tr>
+	    <tr style="display:none" id="del">
+	      <td colspan="4" align=right>
+	        비밀번호:<input type=password size=15>
+	      </td>
+	    </tr>
+	  </table>
+	</center>
+</body>
+</html>
