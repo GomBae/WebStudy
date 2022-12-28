@@ -1,0 +1,66 @@
+<!-- 
+  HTML5 (시맨틱)
+  = 템플릿 태그
+  화면을 나눠서 처리(div)
+  -----------------------------------------
+   로고           검색기 <div class="header"> ==> <header>
+  -----------------------------------------
+   메뉴                <div class="nav"> ==> <nav>
+  -----------------------------------------
+  <div class="left_bar"> => <aside>          <div class="right_bar"> => <aside>
+   광고  |                          | 로그인
+   공지  |                          | 이벤트
+        |      실제화면              |
+        |                          |
+        |                          |
+              <div class="content"> => <section>
+  -----------------------------------------
+                회사 정보
+               <div class="footer"> => <footer>
+  -----------------------------------------
+  
+  <header> : 검색기, 로그
+  <nav> : 메뉴
+  <aside> : 부가적인 내용 (광고, 인기순위...)
+  <section> : 본문출력
+  <article> : 독립적으로 처리
+  <footer> : 개인정보 방침 => 사이트맵
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+  <div><!-- header -->
+    <h1>맛집 & 레시피 & 여행</h1>
+  </div>
+  <div><!-- nav -->
+    <ul>
+      <li>홈</li>
+      <li>회원</li>
+      <li>커뮤니티</li>
+      <li>레시피</li>
+      <li>여행</li>
+    </ul>
+  </div>
+  <div><!-- section -->
+    <div><!-- article -->
+      <h1>믿고보는 맛집리스트</h1>
+      <p>맛집 목록</p>
+    </div>
+    <div><!-- article -->
+      <h1>지역별 인기 맛집</h1>
+      <p>맛집 목록</p>
+    </div>
+    <div><!-- article -->
+      <h1>메뉴별 인기 맛집</h1>
+      <p>맛집 목록</p>
+    </div>
+  </div>
+  <div>
+    <h1>개인정보 방침</h1>
+  </div>
+</body>
+</html>

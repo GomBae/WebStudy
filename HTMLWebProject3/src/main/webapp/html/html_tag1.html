@@ -1,0 +1,117 @@
+<!-- 
+	HTML => 정적페이지 (사용자 정의가 없다)
+		= 지정된 태그만 사용
+		= 태그 + 속성 (사이트 => 계속 만든다)
+		= 태그 = 속성 = 출력형태 로 공부
+		  ------------------
+		= <태그명></태그명>
+		= <태그명/>
+		--------------------
+		<태그명 속성명="값" ...>
+		1) 화면(브라우저에 출력)
+		   = <태그명>출력할 내용</태그명> : 문자 관련, 목록 출력
+		   = <태그명 속성="출력할 내용"> : 멀티미디어, 화면이동, 입력값
+		   = 문자출력 관련
+		     1. 제목 출력
+		        <h1>~<h6>
+		        => <h1>출력물</h1> => 속성 (id, name, class, style)
+		        => <br>, <p> => 문자를 조절 (구조화) => 단독태그 (닫는 태그 사용하지 않음)
+		        => 문장의 강조 ... <b>, <strong>, <em>, <i> : 인용, <sub>, <sup> 첨자
+		   = 목록 출력
+		     1. ul (순서가 없는 태그) : 메뉴
+		         |
+		        li => 데이터값 추가
+		     2. ol (순서가 있는 태그) : 사용빈도 거의 없다
+		         |
+		        li => 데이터값 추가
+		     3. table => 제목을 추가 => 게시판 목록, 노래 ..  => width
+		          |
+		         tr (table-row) => bgcolor
+		         |
+		      ----------
+		      |        |
+		     th        td ==> 데이터 추가
+		         => colspan, rowspan, width, height
+		     4. dl
+		   = 멀티미디어 (이미지, 동영상)
+		     1. img : 이미지 출력
+		          = src => 이미지파일 등록(./  ../) => include, 
+		          = width
+		          = height
+		          = title => 풍선도움말
+		     2. a : 화면 이동
+		          = href : 화면 이동할 파일명
+		          = 모든 화면 변경 => URL ==> 맨 마지막에 파일명을 추가한다
+		          ------------------------------------------ a.nhn, a.daum, a.do => 파일명을 사용자 정의로 만들 수 있다
+		          
+		          = 서버에 파일을 만들어서 저장 => 사용자가 파일을 요청 ==> 404
+		                 ---- 중복이 없기 때문에
+		     3. embed : 동영상 실행
+		        = src : 동영상 경로
+		        = width
+		        = height
+		   = 사용자 입력
+		     1. 글쓰기, 수정하기, 회원가입, 삭제, 아이디 찾기, 로그인...
+		        <input>
+		           |
+		          type
+		               데이터 입력 (size,name => 자바에서 입력값 받기)
+		               = text
+		               = password
+		               = file
+		               = date
+		               ---------------
+		               버튼 종류
+		               = button
+		               = reset
+		               = submit
+		               = image
+		               = radio ==> 반드시 그룹 설정 (name이 동일)
+		               = checkbox ==> name명을 동일하게 설정
+		               ---------------
+		               기타
+		                number, range
+		               ==> type이 틀리는 경우 => default : text
+		     2. <textarea>
+		        => 값을 추가할 때 <textarea>출력할 값</textarea> (** 공백을 주면 공백을 가지고 생성됨 **)
+		     3. <select> : 콤보
+		            |
+		        <option> : 데이터 첨부 => group
+		   = 화면 분할
+		        div, span, header, section, footer, aside, article
+		   -------------------------------- 화면 제작에 CSS를 추가
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+  <h1>&lt;select&gt; 멀티선택</h1>
+  <select multiple="multiple">
+    <option>Java</option>
+    <option>Oracle</option>
+    <option>HTML/CSS:BootStrap</option>
+    <option>JavaScript:Jquery(AJAX),VueJS(vue,vue3,vuex),ReactJS(react,redux,mobx,saga)</option>
+    <option>JSP:MVC(Java(Model),Servlet(Controller),JSP(View))</option>
+    <option>Spring</option>
+    <option>AWS</option>
+  </select>
+  <h1>그룹별 처리:optgroup</h1>
+  <select>
+    <optgroup label="Back-End">
+      <option>Java</option>
+      <option>Oracle</option>
+      <option>JSP</option>
+      <option>Spring</option>
+    </optgroup>
+    <optgroup label="Front-End">
+      <option>HTML/CSS</option>
+      <option>JavaScript</option>
+      <option>라이브러리(AJax,Vue,React)</option>
+      <option>TypeScript</option>
+    </optgroup>
+  </select>
+</body>
+</html>
