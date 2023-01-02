@@ -1,0 +1,43 @@
+<!-- 
+	position : absolute (절대 좌표), relative(상대 좌표)
+	           static => 위 -> 아래   
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+div{
+  width:200px;
+  height:200px;
+  /*position:absolute;*/
+  position: relative;
+}
+.box1{
+  background-color: red;
+  left:10px;
+  top:10px;
+  z-index: 1000;
+}
+.box2{
+  background-color: blue;
+  left:50px;
+  top:50px;
+  z-index: 100;
+}
+.box3{
+  background-color: green;
+  left:90px;
+  top:90px;
+  z-index: 10;
+}
+
+</style>
+</head>
+<body>
+  <div class="box1"></div>
+  <div class="box2"></div>
+  <div class="box3"></div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!-- 
+  1. 글자 관련
+  2. background 관련
+  3. 위치 속성
+  4. border
+     border-width : 5px 5px 5px 5px
+     ------------
+     border-top-width
+     border-bottom-width
+     border-left-width
+     border-right-width
+     border-style : 라인선
+     ------------ solid, dotted, dashed, double
+     border-color
+     border-radius
+     ------------
+     border : 두께 , 라인선, 색상
+     
+  5. 박스모델
+     ------ margin/padding
+  6. 위치 속성 ? 좌표 (절대좌표,상대좌표)
+  7. 화면 분할 (media) => 반응형 => bootstrap
+  -----------------------------------------
+  8. 기타 선택자 (속성 선택자, 가상 선택자, 후손, 자손, 인접 ..)
+  
+  
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+div{
+  width:300px;
+  height:300px;
+}
+.box1{
+  border-left-width:3px;
+  border-left-style:dotted;
+  border-left-color:red;
+}
+.box2{
+  border-right-width:3px;
+  border-right-style:dashed;
+  border-right-color:red;
+}
+.box3{
+  border-top-width:3px;
+  border-top-style:solid;
+  border-top-color:red;
+}
+.box4{
+  border-bottom-width:3px;
+  border-bottom-style:double;
+  border-bottom-color:red;
+}
+.box5{
+  border-top-width:2px;
+  border-top-color:black;
+  border-top-style:solid;
+  border-bottom-width:1px;
+  border-bottom-style:solid;
+  border-bottom-color:black;
+  
+  border-left-width:2px;
+  border-left-color:black;
+  border-left-style:solid;
+  border-right-width:1px;
+  border-right-style:solid;
+  border-right-color:black;
+  
+}
+.box6{
+  border: 2px red solid;
+  border-radius:20px 20px 20px 20px;
+  /* top-left top-right bottom-right bottom-left*/
+}
+</style>
+</head>
+<body>
+  <div class="box1"></div>
+  <div class="box2"></div>
+  <div class="box3"></div>
+  <div class="box4"></div>
+  <div class="box5"></div>
+  <div class="box6"></div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+table {
+  width: 850px;
+}
+#image{
+  width:100%;
+}
+#title{
+  font-size: 35px;
+  font-weight : bold;
+}
+#sub{
+  color:gray;
+}
+#percent{
+  font-size: 30px;
+  color : pink;
+  font-weight: bold;
+}
+#price{
+  font-size : 30px;
+  font-weight : bold;
+}
+#label,#price2{
+  color:green;
+}
+#price2{
+  font-size: 30px;
+  font-weight:bold;
+}
+#star{
+  color:orange;
+}
+#bold{
+  font-weight:bold;
+}
+#count{
+  color: gray;
+}
+#sel{
+  width:100%;
+  height: 40px;
+}
+#cart,#buy{
+  width: 200px;
+  height: 60px;
+  border : 2px green solid;
+  font-size:25px;
+  font-weight:bold;
+}
+#cart{
+  background-color:white;
+  color:green;
+}
+#buy{
+  background-color: green;
+  color:white;
+}
+</style>
+</head>
+<body>
+  <table>
+    <tr>
+      <td width="40%" align="center" rowspan="9">
+        <img src="https://recipe1.ezmember.co.kr/cache/data/goods/22/12/51/1000032595/1000032595_detail_04.jpg"
+        id="image">
+      </td>
+      <td width="60%" align="center"><span id="title">[만개특가] 피코크 초콜릿 샌드위치 비스킷 135g (5팩/10팩)</span></td>
+    </tr>
+    <tr>
+      <td width="60%"><span id="sub">프랑스산 프리미엄 초콜릿 비스켓</span></td>
+    </tr>
+    <tr>
+      <td width="60%"><span id="percent">23%</span>&nbsp;<span id="price">11,500원</span></td>
+    </tr>
+    <tr>
+      <td width="60%"><span id="label">첫구매할인가</span>&nbsp;<span id="price2">10,925원</span></td>
+    </tr>
+    <tr>
+      <td width="60%"><span id="star">★★★★★</span>&nbsp;<span id="bold">4.9</span><span id="count">(18)</span></td>
+    </tr>
+    <tr>
+      <td width="60%"><img src="https://recipe1.ezmember.co.kr/img/mobile/icon_delivery3.png">배송 2,500원</td>
+    </tr>
+    <tr>
+      <td width="60%"><img src="https://recipe1.ezmember.co.kr/img/mobile/icon_point.png">적립 58원 적립 (모든 회원 구매액의 0.5% 적립)</td>
+    </tr>
+    <tr>
+      <td width="60%">
+        <select id="sel">
+          <option>옵션선택</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td width="60%">
+        <input type=button value="장바구니" id="cart">
+        <input type=button value="바로구매" id="buy"> 
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

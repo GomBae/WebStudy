@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.table_content{
+  border-collapse: collapse; /*테이블 라인선 통합*/
+  border-top-width:2px;
+  border-bottom-width:1px;
+  border-top-style:solid;
+  border-bottom-style:solid;
+  border-top-color:black;
+  border-bottom-color:black;
+}
+.table_content th,.table_content td{
+  margin: 0px;
+  padding: 8px;
+  font-size:9pt;
+}
+.table_content th{
+  background-color: #999;
+  color:#FFF;
+  border-width: 1px; 
+}
+.table_content td{
+  border-bottom-width:1px;
+  border-bottom-style: dotted;
+  border-bottom-color:#666;
+}
+.table_content .tdleft{
+  text-align: left;
+}
+.table_content .tdright{
+  text-align: right;
+}
+.table_content .tdcenter{
+  text-align: center;
+}
+.table_content .dataTr:hover{
+  cursor:pointer;
+  background-color: #FC68;
+}
+</style>
+</head>
+<body>
+  <table class="table_content" width=600>
+    <tr>
+      <th>번호</th>
+      <th>이름</th>
+      <th>국어</th>
+      <th>영어</th>
+      <th>수학</th>
+    </tr>
+    <tr class="dataTr">
+      <td class="tdcenter">1</td>
+      <td class="tdcenter">홍길동</td>
+      <td class="tdcenter">89</td>
+      <td class="tdcenter">90</td>
+      <td class="tdcenter">95</td>
+    </tr>
+    <tr class="dataTr">
+      <td class="tdcenter">1</td>
+      <td class="tdcenter">홍길동</td>
+      <td class="tdcenter">89</td>
+      <td class="tdcenter">90</td>
+      <td class="tdcenter">95</td>
+    </tr>
+  </table>
+</body>
+</html>

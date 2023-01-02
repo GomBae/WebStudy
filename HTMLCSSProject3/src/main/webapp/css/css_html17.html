@@ -1,0 +1,52 @@
+<!-- margin : 태그와 태그사이의 여백 처리
+     ------ 통합
+     margin-top
+     margin-left
+     margin-bottom
+     margin-right
+     ---------------
+     margin: top right bottom left
+     margin: 10px 20px 30px 40px
+             ---- ---- ---- ----
+             				margin-left
+             		   margin-bottom
+             	  margin-right
+             margin-top
+     margin:10px (10px 10px 10px)
+     margin:10px 20px (10px 20px)
+     margin:10px 20px 30px (20px)
+            ----      -----
+                 -----      -----
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+div{
+  width:200px;
+  height: 200px;
+  background-color: blue;
+}
+.box1{
+  margin: 30px;/* top:30px right:30px bottom:30px left:30px */
+}
+.box2{
+  margin: 30px 50px;
+}
+.box3{
+  margin: 30px 30px 30px 30px;
+}
+.box4{
+  margin: 30px 50px 30px;
+}
+</style>
+</head>
+<body>
+  <div class="box1"></div>
+  <div class="box2"></div>
+  <div class="box3"></div>
+  <div class="box4"></div>
+</body>
+</html>
