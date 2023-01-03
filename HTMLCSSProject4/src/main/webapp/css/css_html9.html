@@ -1,0 +1,32 @@
+<!-- 
+	속성 선택자
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+/* 모든 태그에 해당 */
+div[id^=a],div[id^=c]{
+background-color: yellow;
+/* id가 a, c로 시작하는것*/
+}
+div[id$=a],div[id$=c]{
+background-color: pink;
+/* id가 a, c로 끝나는것*/
+}
+div[id*=b],div[id*=k]{
+background-color: orange;
+/* id에 b, k가 포함되는것*/
+}
+</style>
+</head>
+<body>
+	<div data-no="1" id="abc">Java</div>
+	<div data-no="2" id="bcd">Oracle</div>
+	<div data-no="3" id="cdf">JavaScript</div>
+	<div data-no="4" id="dko">Spring</div>
+	<div data-no="5" id="ets">AWS</div>
+</body>
+</html>

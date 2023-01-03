@@ -1,0 +1,36 @@
+<!-- 
+    not : 제외
+    
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+/*li:not(.a){
+  color:blue;
+}
+.a{
+color:blue;
+}
+
+li:nth-child(2n){
+color:blue;
+}*/
+li:nth-child(even) {
+	color:blue;
+	/*짝수만 처리*/
+}
+</style>
+</head>
+<body>
+	<ul>
+	  <li>자바</li>
+	  <li class="a">오라클</li>
+	  <li>자바스크립트</li>
+	  <li class="a">JSP</li>
+	  <li>스프링</li>
+	</ul>
+</body>
+</html>

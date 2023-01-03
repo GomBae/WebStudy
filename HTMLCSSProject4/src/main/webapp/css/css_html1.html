@@ -1,0 +1,114 @@
+<!-- 
+  => 디자인할 태그를 선택 (선택자)
+  1) 전체 선택자 (*) : 글꼴지정
+     *{
+       속성명:값 (사용자)
+       ---- 만들어져 있다(사용자 정의가 없다)
+     }
+     ##CSS의 핵심 => 선택자
+  2) 태그 선택자 (태그명...) : 태그는 중복이 많다
+     태그명{
+       속성명:값;
+       속성명:값;
+     }
+  3) ID선택자 (모든 태그는 id속성을 가지고 있다 => 중복이 없는 구분자)
+     <button id="btn"> => 일반 CSS는 사용빈도가 많이 없다 ()
+     #btn{
+       속성명:값
+     }
+     button#btn{
+       속성명:값
+     }
+  4) Class 선택자 : 가장 많이 등장 (중복이 가능)
+     <div class="a"></div>
+     <div class="a"></div>
+     <span class="a"></span>
+     .a{
+     }
+     div.a{
+     ==>권장
+     }
+     ---------------------------- 속성 (id,class(CSS/JavaScript),name(자바))
+  5) 복수형 (여러개를 선택)
+     <div id="a">
+     <div id="b">
+     id =============> #a,#b
+     <div class="a">
+     <div class="b">
+     class ==========> .a,.b
+     <div>
+     <span>
+     tag ============> div,span
+  6) 속성 선택자 ==> html (속성값,태그와 태그사이 값)
+       ==> <a href="값">daum</a>
+           <div>값</div>
+     <a href="abcd">
+     <a href="anjk">
+     <a href="bopq">
+     <a href="slkt">
+     
+     => a[href='asd'] => input[type='button'],input[type='text']
+     => a[href^='a'] => 속성값 a로 시작 <a href="abcd"> <a href="afad"> => a[href^='https|http']
+     => a[href$='k'] => 속성값 k로 끝 <a href="anjk"> img[src$'jpg|png|gif']
+     => a[href*='k'] => <a href="anjk"> <a href="slkt"> => k가 포함된 속성값을 읽어온다
+     
+     <img src="">
+     <img src="">
+     <img src="">
+     태그명[속성명='값']
+     --------------------------------------------------
+     7) 자손 , 후손 선택자
+        <div>
+          <p></p>
+          <h1></h1>
+          <h1></h1>
+          <span>
+            <h1></h1>
+          </span>
+        </div>
+                   ==> DOM (트리형태)
+                        div
+                         |
+                  -----------------------
+                  |      |      |       |
+                  p     h1      h1      span  =====> 자손 div > h1
+                                         |
+                                         h1  ======> 후손 div h1
+                                         
+                  ==> 인접 태그
+                      형제들 ===> ~
+                      인접형제 ==> +
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+/*div > h1 {
+color: blue;
+}*/
+/*div h1 {
+color:green;
+}*/
+/*인접한 태그*/
+/*div > p+h1{
+color:pink;
+}*/
+/*형제*/
+div p~h1{
+color:blue;
+}
+</style>
+</head>
+<body>
+  <div>
+    <p>홍길동</p>
+    <h1>심청이</h1>
+    <h1>박문수</h1>
+    <span>
+      <h1>이순신</h1>
+    </span>
+  </div>
+</body>
+</html>

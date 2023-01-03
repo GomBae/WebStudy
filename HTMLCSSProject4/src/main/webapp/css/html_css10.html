@@ -1,0 +1,78 @@
+<!-- 
+	px => 글자 (16px, h1 => 32px)
+	ex => 2em 14*2 => 28px
+		  1em  	   => 14px
+		  1.2em  ==> 14*1.2 => 16.8
+		  
+		  1em => 14px
+		  3em => 14*3 ==> 42px
+	% => 백분율
+	width:100%
+	
+	색상 : 시스템 지원 => black, blue, pink, orange...
+					  #FF00FF #FFFFFF #000000
+					  rgb(255,255,0)
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+div.container{
+	width:100%;
+}
+div.row{
+	width:750px;
+	margin: 0px auto;
+}
+h1{
+	text-align: center;
+}
+ul{
+	list-style: none;
+	background-color: blue;
+}
+ul li{
+	padding: 15px;
+	float: left;
+	font-weight:bold;
+	color:white;
+}
+ul li:first-child {
+	border-radius:10px 0px 0px 10px;
+}
+ul li:last-child {
+	border-radius: 0px 10px 10px 0px;
+}
+ul li:nth-child(odd){
+	background-color: #FF0003;
+}
+ul li:nth-child(even) {
+	background-color: #800000;
+}
+ul li:hover{
+	cursor: pointer;
+	color:cyan;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <h1>CSS응용</h1>
+      <!-- 메뉴 -->
+      <ul>
+        <li>홈</li>
+        <li>회원가입</li>
+        <li>맛집</li>
+        <li>레시피</li>
+        <li>서울여행</li>
+        <li>코스</li>
+        <li>추천</li>
+        <li>커뮤니티</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

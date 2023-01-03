@@ -1,0 +1,84 @@
+<!-- 
+  반응 선택자
+  = hover : mouse over
+  = active : mouse press
+  
+  => 태그명, id명, class명
+  => 속성선택자
+     input[type=값]
+     => img[src^=값], img[src$=값], img[src*=값]
+  => 후손, 자손
+     태그명 태그명 => 후손
+     태그명 > 태그명 => 자손
+     태그명 태그명+태그명 : 인접
+     태그명 태그명~태그명 : 형제들
+  => 상태 선택자
+     태그명:focus
+     태그명:disabled
+     태그명:enabled
+     태그명:checked
+  => 반응 선택자
+     태그명 : active
+     태그명 : hover
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+h1:active{
+color:red;
+}
+
+h1:hover{
+color:green;
+}
+.table_content a{
+  text-decoration: none; /*underline 제거*/
+  color:black;
+}
+.table_content a:active{
+  color:green;
+}
+.table_content a:hover{
+  text-decoration: underline;
+  color:pink;
+}
+</style>
+<link rel="stylesheet" href="table.css">
+</head>
+<body>
+  <h1>반응 선택자</h1>
+  <table class="table_content" width=700>
+    <tr>
+      <th width=10%>번호</th>
+      <th width=45%>제목</th>
+      <th width=15%>이름</th>
+      <th width=20%>작성일</th>
+      <th width=10%>조회수</th>
+    </tr>
+    <tr>
+      <td width=10% class="tdcenter">번호</td>
+      <td width=45%><a href="#">제목1</a></td>
+      <td width=15% class="tdcenter">이름</td>
+      <td width=20% class="tdcenter">작성일</td>
+      <td width=10% class="tdcenter">조회수</td>
+    </tr>
+    <tr>
+      <td width=10% class="tdcenter">번호</td>
+      <td width=45%><a href="#">제목2</a></td>
+      <td width=15% class="tdcenter">이름</td>
+      <td width=20% class="tdcenter">작성일</td>
+      <td width=10% class="tdcenter">조회수</td>
+    </tr>
+    <tr>
+      <td width=10% class="tdcenter">번호</td>
+      <td width=45%><a href="#">제목3</a></td>
+      <td width=15% class="tdcenter">이름</td>
+      <td width=20% class="tdcenter">작성일</td>
+      <td width=10% class="tdcenter">조회수</td>
+    </tr>
+  </table>
+</body>
+</html>

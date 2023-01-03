@@ -1,0 +1,27 @@
+<!-- 
+   문자 선택자
+   ::after
+   ::before
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+li#new::after{
+  content: "--신규";
+}
+li#new::before{
+  content: "신규--";
+}
+</style>
+</head>
+<body>
+  <ul>
+    <li>홍길동</li>
+    <li>박문수</li>
+    <li id="new">이순신</li>
+  </ul>
+</body>
+</html>

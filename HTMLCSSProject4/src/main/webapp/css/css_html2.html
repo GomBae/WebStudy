@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="table.css">
+<style type="text/css">
+.wrap{
+width:100%;
+margin-top: 50px;
+}
+table{
+margin:0px auto;
+}
+</style>
+<script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#keyword'.keyup(function(){
+		let k=$('#keyword').val();
+		$('#user-table > tbody > tr').hide();
+		let temp=$('#user-table > tbody > tr > td:nth-child(5n+2):contains("'+k+'")');
+		$(temp).parent().show();
+	}))
+})
+</script>
+</head>
+<body>
+ <div class="wrap">
+  <table class="table_content" width="500">
+    <tr>
+      <td>
+        <input type=text id=keyword size=20 placeholder="검색">
+      </td>
+    </tr>
+  </table>
+  <table class="table_content" width="500" id="user-table">
+   <thead>
+    <tr>
+      <th>학번</th>
+      <th>이름</th>
+      <th>국어</th>
+      <th>영어</th>
+      <th>수학</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="dataTr">
+      <td>1</td>
+      <td>홍길동</td>
+      <td>90</td>
+      <td>90</td>
+      <td>90</td>
+    </tr>
+    <tr class="dataTr">
+      <td>2</td>
+      <td>이순신</td>
+      <td>90</td>
+      <td>90</td>
+      <td>90</td>
+    </tr>
+    <tr class="dataTr">
+      <td>3</td>
+      <td>박문수</td>
+      <td>90</td>
+      <td>90</td>
+      <td>90</td>
+    </tr>
+    <tr class="dataTr">
+      <td>4</td>
+      <td>박돌돌</td>
+      <td>90</td>
+      <td>90</td>
+      <td>90</td>
+    </tr>
+    <tr class="dataTr">
+      <td>5</td>
+      <td>심돌돌</td>
+      <td>90</td>
+      <td>90</td>
+      <td>90</td>
+    </tr>
+    </tbody>
+  </table>
+ </div>
+</body>
+</html>

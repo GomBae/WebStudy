@@ -1,0 +1,73 @@
+<!-- 
+	여백 주기
+	  태그와 태그 사이 여백 : margin
+	  	margin : 4개의 속성을 가지고 있다
+	  	margin-top
+	  	margin-right
+	  	margin-bottom
+	  	margin-left
+	  	--------------
+	  태그안에 출력물에 여백 : padding
+	  	padding : 4개의 속성을 가지고 있다
+	  	padding-top
+	  	padding-right
+	  	padding-bottom
+	  	padding-left
+	  테두리 두께
+	    border-width
+	    border-style
+	    border-color
+	    ------------ border:1px solid red
+	    border-radius : 타원형
+	    border-radius : 10px 10px 10px 10px
+	    				---- ---- ---- ----
+	    				좌상단 우상단 우하단 좌하단
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+/*div{
+	width:300px;
+	height: 300px;
+	border: 1px solid green;
+	border-radius: 30px 50px 70px 90px;
+}*/
+div.a{
+	width:200px;
+	height: 100px;
+	background-color: red;
+	display: inline-block;
+	/*
+		크기 변경 (width,height) => inline-block
+		---------------------- 없는 경우 => inline
+	*/
+}
+div.box1{
+	background-color: blue;
+	margin: 30px 50px;
+}
+div.box2{
+	background-color: yellow;
+	margin: 30px 50px 30px;
+}
+div.box3{
+	background-color: cyan;
+	margin : 30px 50px 30px 50px;
+}
+div.box4{
+	background-color: green;
+	margin: 30px 50px;
+}
+</style>
+</head>
+<body>
+	<div></div>
+	<div class="box1 a"></div>
+	<div class="box2 a"></div>
+	<div class="box3 a"></div>
+	<div class="box4 a"></div>
+</body>
+</html>
