@@ -1,0 +1,70 @@
+<!-- 
+	BootStrap
+	
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- 라이브러리 추가 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<style type="text/css">
+/*
+	container : 해상도에 따라 다르다 (좌우에 여백)
+	container-fluid : 풀화면 
+*/
+.container{
+	border:2px solid red;
+}
+.row{
+	width:100%;
+	margin:0px auto;
+}
+.btn-active{
+	background-color: cyan;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <!-- 화면분할 후 출력 -->
+    <div class="row"><!-- section -->
+      <!-- button -->
+      <input type=button value="빨강" class="btn btn-danger"><!-- btn-sm -->
+      <input type=button value="파랑" class="btn btn-primary">
+      <input type=button value="청록" class="btn btn-success">
+      <input type=button value="주황" class="btn btn-warning">
+      <input type=button value="회색" class="btn btn-active">
+      <p>
+      <input type=button value="빨강" class="btn btn-danger btn-lg">
+      <input type=button value="파랑" class="btn btn-primary btn-lg">
+      <input type=button value="청록" class="btn btn-success btn-lg">
+      <input type=button value="주황" class="btn btn-warning btn-lg">
+      <input type=button value="회색" class="btn btn-active btn-lg">
+      <p>
+      <input type=button value="빨강" class="btn btn-danger btn-xs">
+      <input type=button value="파랑" class="btn btn-primary btn-xs">
+      <input type=button value="청록" class="btn btn-success btn-xs">
+      <input type=button value="주황" class="btn btn-warning btn-xs">
+      <input type=button value="회색" class="btn btn-active btn-xs">
+    </div>
+   <div>
+    <div style="height:30px"></div><!-- 간격 -->
+    <div class="row">
+      <input type="text" size=20 class="input-sm"><br>
+      <input type="text" size=20 class="input-lg"><br>
+      <input type="text" size=20 class="input-xs"><br>
+    </div>
+    <div style="height:30px"></div>
+    <div class="row">
+      검색<select class="input-sm">
+        <option>이름</option>
+        <option>제목</option>
+        <option>내용</option>
+      </select>
+    </div>
+   </div>
+  </div>
+</body>
+</html>
