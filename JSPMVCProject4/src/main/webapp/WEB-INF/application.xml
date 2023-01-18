@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	ajax, mybatis, spring => xml
+	사용자 정의 태그
+	= 뷰(보여주는 형식 태그가 아니다, 문서 저장 목적으로 만든다)
+	  - HTML
+	= 문서형 데이터베이스
+	<beans> => 테이블 (최상위 태그) => 한개만 필요하다
+	  <bean class="com.sist.model.FoodModel"/> : 튜플 (row)
+	        ===== 컬럼명 : 속성, 태그
+	        
+	  <bean class="com.sist.model.MainModel"/>
+	  <bean class="com.sist.model.SeoulModel"/>
+	</beans>
+	
+	<bean>
+		<class></class>
+	</bean>
+	
+	<bean class="">
+ -->
+<beans>
+  <bean class="com.sist.model.FoodModel"/>
+  <bean class="com.sist.model.MainModel"/>
+  <bean class="com.sist.model.SeoulModel"/>
+</beans>
